@@ -1,6 +1,6 @@
-# hello-kapalas-
+Hamlet Lima Quintana- Transferencia
 
-despues de todo la muerte es una gran farsante .
+Despues de todo la muerte es una gran farsante .
 La muerte miente cuando anuncia que se robara la vida.
 como si se pudiera cortar la primavera.
 porque al final de cuentas la muerte solo puede robarnos el tiempo,
@@ -30,4 +30,4 @@ una transferencia que te no tiene regreso, un infinito viaje hacia el futuro,
 como la luz que aparta 
 irremediablemente las tinieblas.
 
-Hamlet Lima Quintana- Transferencia
+
