@@ -1,0 +1,68 @@
+public class Queue <T>{
+
+    Node<T> first;
+    Node<T> last;
+
+    public Queue() {
+        first = last = null;
+    }
+
+
+
+    public boolean isEmpty() {
+        return first == null;
+    }
+
+    public T dequeue()  {
+
+        if (!isEmpty()) {
+            Node<T> temp = first;
+            first = first.getNext();
+            return temp.getData();
+        } else {
+            throw new NullPointerException("Empty Queue");
+        }
+    }
+
+    public T getit(int idx) throws NullPointerException {
+
+        if (idx >= 1 || idx <= size()) {
+            Node<T> temp = first;
+            for (int i = 1; i < idx; i++) {
+                temp = temp.getNext();
+            }
+            return temp.getData();
+        } else {
+            throw new NullPointerException("Wrong index!");
+        }
+
+    }
+
+    public void enqueue(T data) {
+        Node<T> newNode = new Node<>(data);
+        if (isEmpty()) {
+            first = newNode;
+            last = newNode;
+        } else {
+            last.setNext(newNode);
+            last = newNode;
+        }
+    }
+
+
+
+    public int size() {
+        if (isEmpty()) {
+            return 0;
+        }
+        Node<T> temp = first;
+        int count = 1;
+        while (temp.getNext() != null) {
+            temp = temp.getNext();
+            count++;
+        }
+        return count;
+
+    }
+
+   }
