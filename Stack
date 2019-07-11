@@ -1,0 +1,40 @@
+public class Stack {
+
+    private static final int Max = 100;
+    private int top;
+    private char data[];
+
+    Stack(){
+        top = -1;
+        data = new char[Max];
+    }
+
+    public boolean isEmpty(){
+        return top == -1;
+    }
+
+    public boolean isFull(){
+        return top == Max -1;
+    }
+
+    public void Push(char x){
+        if(top >=(Max -1)){
+            System.out.println("Stack is full");
+        }else{data[++top] = x;}
+    }
+
+    public char Pop() {
+        if (top <= 0) {
+            System.out.println("Stack is empty");
+            return 0;
+        } else {
+            char x = data[--top];
+            return x;
+        }
+    }
+    public int peek() {
+        if (isEmpty()) System.out.println("stack is empty");
+        return data[top];
+    }
+
+
